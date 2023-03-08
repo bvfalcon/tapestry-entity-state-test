@@ -1,0 +1,22 @@
+<html t:type="layout" title="Login | test"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div>
+    <div>
+        <t:form t:id="login">
+            <h2>Please sign in</h2>
+            <div>
+                <t:textfield t:id="username" validate="required" placeholder="Username"/>
+            </div>
+            <div>
+                <t:passwordfield t:id="password" validate="required" placeholder="Password"/>
+            </div>
+            <div>
+                <t:submit value="Sign in"/>
+            </div>
+        </t:form>
+    </div>
+</div>
+
+</html>

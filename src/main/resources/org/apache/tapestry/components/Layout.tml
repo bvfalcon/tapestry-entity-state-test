@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+<body>
+
+<div>
+    <t:if test="${loggedIn}">
+        <span>Logged as ${username}</span>
+        <p:else>
+            <t:pagelink page="login">Sign in</t:pagelink>
+        </p:else>
+    </t:if>
+</div>
+
+<t:body />
+
+</body>
+</html>
